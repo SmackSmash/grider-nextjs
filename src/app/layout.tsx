@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'nexGrider Next.js',
+  title: 'Grider Next.js',
   description: "Let's learn this fast"
 };
 
