@@ -9,9 +9,9 @@ type HeroProps = PropsWithChildren<{
 
 export default function Hero({ imgSrc, imgAlt, children }: HeroProps) {
   return (
-    <section className='absolute -z-10 inset-0'>
-      <Image className='object-cover' src={imgSrc} alt={imgAlt} fill />
-      <h1>{children}</h1>
+    <section className='absolute inset-0 flex items-center justify-center'>
+      <Image className='object-cover -z-10' src={imgSrc} alt={imgAlt} fill />
+      {children}
     </section>
   );
 }
