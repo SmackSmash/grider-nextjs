@@ -4,7 +4,7 @@ import HomeImg from '/public/images/home.jpg';
 export default function Home() {
   return (
     <main>
-      <Hero src={HomeImg} alt='Car factory' />
+      <Hero imgSrc={HomeImg} imgAlt='Car factory'></Hero>
     </main>
   );
 }
