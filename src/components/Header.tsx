@@ -12,19 +12,23 @@ export default function Header() {
       <Link className={pathname === '/' ? 'font-bold' : ''} href='/'>
         Home
       </Link>
-      <Link
-        className={pathname === '/performance' ? 'font-bold' : ''}
-        href='/performance'>
-        Performance
-      </Link>
-      <Link
-        className={pathname === '/reliability' ? 'font-bold' : ''}
-        href='/reliability'>
-        Reliability
-      </Link>
-      <Link className={pathname === '/scale' ? 'font-bold' : ''} href='/scale'>
-        Scale
-      </Link>
+      <div className='space-x-4'>
+        <Link
+          className={pathname === '/performance' ? 'font-bold' : ''}
+          href='/performance'>
+          Performance
+        </Link>
+        <Link
+          className={pathname === '/reliability' ? 'font-bold' : ''}
+          href='/reliability'>
+          Reliability
+        </Link>
+        <Link
+          className={pathname === '/scale' ? 'font-bold' : ''}
+          href='/scale'>
+          Scale
+        </Link>
+      </div>
     </nav>
   );
 }
