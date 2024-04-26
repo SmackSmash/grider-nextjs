@@ -1,14 +1,10 @@
-import Image from 'next/image';
+import Hero from '@/components/Hero';
+import HomeImg from '/public/images/home.jpg';
 
 export default function Home() {
   return (
-    <main className='absolute -z-10 inset-0'>
-      <Image
-        className='object-cover'
-        src='/images/home.jpg'
-        alt='Factory'
-        fill
-      />
+    <main>
+      <Hero src={HomeImg} alt='Car factory' />
     </main>
   );
 }
